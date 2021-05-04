@@ -139,7 +139,7 @@ class Session:
         elif request_method == 'post':
             response = requests.post(endpoint, params=params, headers=headers, json=body)
         elif request_method == 'delete':
-            response = requests.delete(endpoint, params=params, headers=headers)
+            response = requests.delete(endpoint, params=params, headers=headers, json=body)
         elif request_method == 'put':
             response = requests.put(endpoint, params=params, headers=headers, json=body)
         else:
